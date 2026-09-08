@@ -1,0 +1,22 @@
+{
+  "name": "alexandria-estate-ops",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/build.mjs",
+    "dev:api": "wrangler dev --ip 127.0.0.1 --port 8787",
+    "test": "node --test tests/*.test.js"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.31.10",
+    "vite": "latest",
+    "wrangler": "^4.129.1"
+  },
+  "dependencies": {
+    "@openai/sites-vite-plugin": "^0.2.0",
+    "decimal.js": "^10.6.0",
+    "drizzle-orm": "^0.45.2"
+  }
+}
